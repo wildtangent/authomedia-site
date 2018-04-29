@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Joey Connor <joe@authomedia.co.uk>",
+  "repository": "https://github.com/wildtangent/authomedia-site.git",
   "license": "ISC",
   "dependencies": {
     "concurrent-transform": "^1.0.0",
