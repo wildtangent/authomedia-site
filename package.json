@@ -1,0 +1,23 @@
+{
+  "name": "authomedia-website",
+  "version": "1.0.0",
+  "description": "Authomedia.co.uk Website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrent-transform": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-awspublish": "^3.3.3",
+    "gulp-awspublish-router": "^0.1.5",
+    "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-util": "^3.0.8",
+    "yargs": "^11.0.0"
+  }
+}
