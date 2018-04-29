@@ -24,6 +24,15 @@ var config = {
   }
 }
 
+gulp.task('server', function() {
+  gulp.src('./src')
+  .pipe(plugins.serverLivereload({
+    host: "0.0.0.0",
+    port: 3000,
+    livereload: true
+  }));
+});
+
 gulp.task('publish', function() {
   var site = config.sites[config.site];
 
@@ -78,6 +87,11 @@ gulp.task('publish', function() {
   .on("error", function(err) {
     return console.error(err);
   });
+});
+
+// Clean, build, watch folders and start dev server
+gulp.task('default', function() {
+  plugins.runSequence('server');
 });
 
 gulp.task('deploy', function() {
